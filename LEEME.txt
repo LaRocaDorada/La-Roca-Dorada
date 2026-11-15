@@ -1,0 +1,11 @@
+LA ROCA DORADA — REVISIÓN PERSONALIZADA
+
+Abre index.html en el navegador. No publiques todavía.
+
+Portada: imagen original 2172x724 con leyenda incorporada. Se eliminó el texto HTML superpuesto para evitar duplicados. Sonido ambiente activable por botón.
+
+Frascos: se conservaron los píxeles originales de los productos y etiquetas; únicamente se suavizó mínimamente el contorno de transparencia. Los fondos y sombras se aplican con CSS.
+
+Se añadieron secciones sobre beneficios culinarios, nutrientes, modos de consumo y precauciones inspiradas en la web antigua. Las afirmaciones sanitarias no comprobadas se reformularon. Misión y visión permanecen las de la versión nueva.
+
+El formulario de opiniones sigue SIN base de datos. Minijuego sin cambios.
