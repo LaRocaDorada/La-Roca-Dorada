@@ -1,347 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paginaghee</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+        content="La Roca Dorada: Ghee artesanal elaborado con dedicación. Conoce nuestras presentaciones y haz tu pedido en Colombia."
+        name="description" />
+    <title>La Roca Dorada | Ghee Artesanal</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo"></a>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt="">                
-            </label>            
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#welcome">¿Quiénes somos?</a></li>
-                    <li><a href="#sobreelghee">Más sobre el Ghee</a></li>
-                    <li><a href="#prices">Es importante que sepas</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-content container">            
-            <div class="header-txt">
-                <h1 data-text="Roca">La Roca Dorada</h1>
-                <span>GHEE ARTESANAL</span>
-                <p>
-                    En La Roca Dorada ofrecemos Ghee artesanal de alta calidad.                     
-                    Descubre la excelencia en todo su contenido. <!--
-                    Nuestro Ghee, elaborado con mantequilla de alta calidad, 
-                    destaca por su sabor rico y versatilidad en la cocina. 
-                    //En La Roca Dorada, nos enorgullece presentar
-                    nuestro Ghee artesanal, una joya culinaria
-                    elaborada con mantequilla de la más alta calidad.
-                    Nuestro Ghee se caracteriza por su sabor rico y profundo,
-                    su pureza excepcional y su versatilidad en la cocina.
-                    Hecho con cuidado y atención al detalle, cada lote de 
-                    nuestro Ghee refleja nuestro compromiso con la excelencia -->
-                </p>
-            <!--<a href="#" class="btn-1" >Quiero saber más</a> -->
-            
-            </div>            
-        </div>
+    <header class="topbar"><a class="brand" href="#inicio"><img alt="Logo La Roca Dorada" src="img/logo.PNG" /><span>LA
+                ROCA <em>DORADA</em><small>GHEE ARTESANAL</small></span></a><button aria-expanded="false"
+            aria-label="Abrir menú" class="menu-toggle" id="menuToggle">☰</button>
+        <nav aria-label="Menú principal" id="mainNav"><a href="#nosotros">Nosotros</a><a
+                href="#productos">Productos</a><a href="#beneficios">El Ghee</a><a href="#conoce-ghee">Nutrientes y
+                usos</a><a href="#importante">Es importante saber</a><a href="#juego">Juego</a><a
+                href="#opiniones">Opiniones</a><a class="nav-order"
+                href="https://wa.me/573203303682?text=Hola%2C%20quisiera%20conocer%20los%20productos%20de%20La%20Roca%20Dorada"
+                rel="noopener" target="_blank">Haz tu pedido ↗</a></nav>
     </header>
-    <hr class="separador1">
-
-
-    <section class="welcome">
-        <section id="welcome"></section>
-        <div class="welcome-1"></div>
-
-        <div class="welcome-2">
-            <h2>Bienvenidos a</h2>
-            <h5>La Roca Dorada</h5>
-
-            <p class="b1">
-                Nuestro viaje empresarial está marcado por la fe y el apoyo del Creador en cada paso que damos.
-            </p>
-            <p class="quienes-somos">Somos una pequeña familia con grandes sueños, decididos a prosperar con integridad y honestidad,
-                proporcionando productos de óptima calidad que promueven la salud y el bienestar. Elaboramos 
-                con entrega y amor cada uno de nuestros productos y con el cuidado y dedicación necesarios
-                para garantizar un delicioso alimento de calidad.
-            </p>
-            
-            
+    <main>
+        <div class="hero hero-natural" id="inicio"><img
+                alt="La Roca Dorada: paisaje de montañas al amanecer con los tres frascos originales de Ghee artesanal"
+                class="hero-art" fetchpriority="high" src="img/hero-original-alta-calidad.png" />
+            <div class="hero-audio"><button class="sound-btn" id="soundToggle" type="button">♫ Escuchar el
+                    campo</button><audio id="heroAudio" loop="True" preload="none">
+                    <source src="video/ambiente-campo.mp3" type="audio/mpeg" />
+                </audio></div>
         </div>
-        
-
-    </section>
-    <hr class="separador2">
-
-    <section class="mision-vision">
-        <div class="imagen-mision"></div>
-        <div class="imagen-vision"></div>
-        <div class="mision">
-            <h6>Misión</h6>            
-            <p>
-                Elaborar ghee artesanal, natural y de alta calidad, con amor, honestidad y dedicación, para nutrir a las familias y llevar bienestar a sus hogares.
-            </p>
-        </div>
-        <div class="vision">
-            <h6>Visión</h6>            
-            <p>
-                Ser una marca reconocida por la excelencia de nuestro ghee artesanal, creciendo con integridad, fe en Dios y compromiso con el bienestar de las familias.
-            </p>
-        </div>
-    </section>
-
-
-    <Main class="Services-container">   <!-- Se usa la etiqueta "main" porque quiero que sea el contenido principal (solo se utiliza una vez //porque es contenido principal) -->
-
-        <div class="services-txt">
-            <section id="sobreelghee"></section>
-            <h2>¿Qué es el Ghee?</h2>
-            <hr>
-            <p class="nuestro-producto">
-                El ghee es un tipo de mantequilla clarificada que se obtiene mediante un proceso de calentamiento 
-                y filtrado que elimina la lactosa y la caseína que normalmente tiene la mantequilla y que son nocivos para 
-                la salud. Este proceso, al tiempo que lo hace saludable, le otorga al ghee un sabor suave y un aroma 
-                característico, además de una textura sedosa y fácil de untar. 
-                A diferencia de la mantequilla tradicional, el ghee tiene un punto de humo más alto, lo que lo 
-                hace ideal para cocinar a altas temperaturas sin quemarse ni generar humo. El ghee es 
-                apreciado por su larga vida útil debido a su bajo contenido de agua y su capacidad para resistir 
-                la oxidación. Este es un ingrediente esencial en la cocina de muchas culturas que aporta un sabor único y 
-                una versatilidad culinaria que lo convierte en un favorito tanto para chefs profesionales como 
-                para entusiastas de la cocina casera.
-            </p>
-        </div>
-        <div class="services-group">
-            <div class="services-1">
-                <img src="images/fotogheealfondococina.jpg" alt="">
-                <h3>Beneficios</h3>
-                <ul>
-                    <li>Ayuda a mejorar la digestión.</li>
-                    <li>Es rico en antioxidantes.</li>
-                    <li>Contribuye a mantener la salud cardiovascular.</li>
-                    <li>Es una buena fuente de vitaminas liposolubles.</li>
-                    <li>fortalece el sistema inmunológico.</li>
-                    <li>Mejora la absorción de nutrientes en el cuerpo.</li>
-                    <li>Tiene propiedades antiinflamatorias.</li>
-                    <li>Promueve la salud de la piel y el cabello.</li>
-                    <li>Es una fuente de energía sostenida y duradera.</li>
-                    <li>Contribuye a equilibrar los niveles de colesterol.</li>
-                    <li>Ayuda a mantener el equilibrio hormonal.</li>
-                    <li>Es apto para personas con intolerancia a la lactosa.</li>
-                    <li>Mejora la memoria y la función cognitiva.</li>
-                    <li>Puede ayudar en la pérdida de peso cuando se consume con moderación.</li>
-                </ul>
-            
-                               
+        <div class="intro" id="nosotros">
+            <div class="intro-art"><img alt="Frasco original de Ghee La Roca Dorada de 400 gramos" loading="lazy"
+                    src="img/frasco_400g_integrado.png" />
+                <div class="round-stamp">ARTESANAL<br /><b>✦</b><br />CON AMOR</div>
             </div>
-            <div class="services-1">
-                <img src="images/cuchillo_mantequilla.jpg" alt="">
-                <h3>Nutrientes y otros elementos que podrías encontrar en una presentación de 200 gramos</h3>
-                <ul>
-                    <li>Grasas totales: 200g</li>
-                    <ul>
-                        <li>Grasas saturadas</li>
-                        <li>Grasas monosaturadas</li>
-                        <li>Grasas polisaturadas</li>
-                    </ul>
-                    <li>Colesterol</li>
-                    <li>Sodio</li>
-                    <li>Carbohidratos</li>
-                    <ul>
-                        <li>Azúcares: 0g</li>
-                    </ul>
-                    <li>Proteínas: 0g</li>
-                    <ul>
-                        <li>En términos de vitaminas y minerales puede contiener:</li>
-                        <ul>
-                            <li>Vitamina A</li>
-                            <li>Vitamina E</li>
-                            <li>Vitamina k</li>
-                            <li>Calcio</li>
-                            <li>Fósforo</li>
-                            <li>Zinc</li>
-                            <li>Hierro</li>
-                            <li>Potasio</li>
-                            <li>Magnesio</li>
-                            <li>Selenio</li>
-                            <li>No es una fuente significativa de vitaminas y minerales en comparación con otros alimentos.</li>
-                        </ul>
-                    </ul>
-                </ul>
-
-            </div>
-            <div class="services-1">
-                <img src="images/chef_parrilla_fuego.jpg" alt="">
-                <h3>Modo de consumo</h3>
-                <ul>
-                    <li>Consumir una cucharadita de ghee en ayunas.</li>
-                    <li>Agregar ghee a tus batidos o smoothies.</li>
-                    <li>Utilizar ghee como sustituto de mantequilla y/o aceite en la cocina.</li>
-                    <li>Untar ghee en arepas, pan, tostadas o crackers.</li>
-                    <li>Incorporar ghee en recetas de cocina como guisos, salsas, o salteados.</li>
-                  </ul>
-                               
-            </div>
-        </div>        
-    </Main>
-
-
-    <section class="prices">
-        <section id="prices"></section>
-        <div class="prices-1">
-            <h2>Es importante que sepas...</h2>
-            <ul>
-                <li>El ghee, al ser una forma de mantequilla clarificada, contiene una buena cantidad de ácidos grasos, 
-                    incluidos los ácidos grasos omega. Los ácidos grasos omega son nutrientes esenciales para el 
-                    cuerpo humano, y se dividen en omega-3, omega-6 y omega-9. A continuación, te proporciono 
-                    información sobre la presencia de estos ácidos grasos en el ghee:
-                    <strong>Omega-3:</strong> El ghee contiene cantidades moderadas de ácidos grasos omega-3, 
-                    especialmente ácido alfa-linolénico (ALA). Estos ácidos grasos son beneficiosos 
-                    para la salud del corazón, el cerebro y la función cognitiva.
-                    <strong>Omega-6:</strong> También se encuentra omega-6 en el ghee, principalmente en 
-                    forma de ácido linoleico. Los ácidos grasos omega-6 son importantes 
-                    para la función cerebral, la salud de la piel y el sistema inmunológico.
-                    <strong>Omega-9:</strong> El ghee es rico en ácido oleico, un ácido graso omega-9. 
-                    Este ácido graso es conocido por sus propiedades antiinflamatorias 
-                    y su capacidad para mejorar la salud cardiovascular.</li>
-                <li>Las grasas presentes en el ghee, especialmente las grasas saturadas y monoinsaturadas, pueden tener 
-                beneficios para la salud cuando se consumen con moderación como parte de una dieta equilibrada. Aquí 
-                te proporcionamos información sobre cada tipo de grasa y su impacto en la salud:</li>
-                <li><strong>Grasas saturadas:</strong></li>
-                    <ul>
-                        <li>El ghee es rico en grasas saturadas, que tradicionalmente se han considerado 
-                        como grasas "malas" debido a su asociación con el aumento del colesterol LDL (colesterol "malo") 
-                        y el riesgo de enfermedades cardíacas. Sin embargo, estudios más recientes han cuestionado esta 
-                        asociación y han sugerido que no todas las grasas saturadas tienen el mismo efecto en la salud 
-                        cardiovascular. Algunos estudios sugieren que el ghee puede tener un perfil de ácidos grasos 
-                        saturados que no afecta negativamente los niveles de colesterol en la misma medida que otras 
-                        fuentes de grasas saturadas, como las grasas trans.</li>
-                    </ul>
-                    <li><strong>Grasas monoinsaturadas:</strong></li>
-                    <ul>
-                        <li>El ghee también contiene grasas monoinsaturadas, que se consideran 
-                        grasas "buenas" debido a su capacidad para aumentar el colesterol HDL (colesterol "bueno") 
-                        y mejorar la salud cardiovascular en general.</li>
-                    </ul>
-                <li>Es importante tener en cuenta que, si bien las grasas en el ghee pueden tener beneficios 
-                potenciales para la salud, su consumo debe ser moderado. El exceso de grasas saturadas puede 
-                contribuir al aumento de peso, el riesgo de enfermedades cardíacas y otros problemas 
-                de salud si no se controla adecuadamente.</li>
-                
-                <li>En resumen, las grasas presentes en el ghee pueden ser parte de una dieta saludable 
-                siempre que se consuman con moderación y se combinen con una variedad de alimentos 
-                nutritivos, como frutas, verduras, proteínas magras y granos enteros. Es importante 
-                consultar con un profesional de la salud para obtener orientación personalizada sobre 
-                la cantidad adecuada de grasas en tu dieta según tus necesidades y condiciones de salud específicas.</li>
-            </ul>
-
-            <!--<table>
-                <tbody>
-                    <tr>
-                        <th>200g</th>
-                        <td>$12.080</td>
-                    </tr>
-                    <tr>
-                        <th>600g</th>
-                        <td>$36.000</td>
-                    </tr>
-                    <tr>
-                        <th>1000g</th>
-                        <td>$60.000</td>
-                    </tr>
-                </tbody>
-            </table> -->           
-        </div>
-        <div class="ima-prices-2">
-            <img src="images/carne_asada.jpg" alt="imagen 1" class="imagen">
-            <img src="images/chef_parrilla_fuego.jpg" alt="imagen 2" class="imagen">
-        </div>
-        
-    <!--/section>
-
-    <section class="personal container">
-        <div class="personal-txt">
-            <h2>Un nuevo hábito de alimentación</h2>
-            <hr> <!--Este "hr" se pone para una línea-->
-            <!--<p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse,
-                voluptatum voluptate, omnis dolorem, nobis adipisci molestias
-                deleniti magni obcaecati commodi incidunt amet itaque nemo
-                voluptatibus dolorum doloremque tempore beatae fugit?
-            </p> -->
-
-<!--        </div>
-
-        <div class="personal-group">
-
-            <div class="personal-1">
-                <img src="images/cabaña_noche.jpg" alt="">
-                <h3>Lorem</h3>
-                <p>Un párrafo verdaderamente corto
-                   Un párrafo verdaderamente corto
-                </p>
-                
-            </div>
-            <div class="personal-1">
-                <img src="images/gheefrentefondoblanco.JPG" alt="">
-                <h3>Lorem</h3>
-                <p>Un párrafo verdaderamente corto
-                   Un párrafo verdaderamente corto
-                </p>
-                
-            </div>
-            <div class="personal-1">
-                <img src="images/dosfrascosdeghee.jpg" alt="">
-                <h3>Lorem</h3>
-                <p>Un párrafo verdaderamente corto
-                   Un párrafo verdaderamente corto
-                </p>
-                
-            </div>
-        </div> -->
-        
-
-    </section>
-    <div class="redes-sociales">
-        <a href="https://www.facebook.com/profile.php?id=61556920539995" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="URL de tu perfil de Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/larocadorada7/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCJzZYxI-AANLliIH5Z0JBQg" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://wa.me/573203303682" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
-      
-        
-      
-
-    <Footer>
-        <!--<div class="footer-bg">
-            <h2>Tu opinión nos importa</h2>
-
-            <form>
-                <div class="campo-1">
-                    <input class="campo" type="text" placeholder="Nombre">                                        
+            <div class="intro-copy"><span class="eyebrow">NUESTRA ESENCIA</span>
+                <h2>Un alimento sencillo.<br /><i>Una dedicación extraordinaria.</i></h2>
+                <p>En La Roca Dorada creemos en el valor de hacer las cosas bien. Somos un emprendimiento familiar que
+                    prepara Ghee artesanal con cuidado, honestidad y gratitud a Dios.</p>
+                <div class="values">
+                    <div><strong>Misión</strong>
+                        <p>Elaborar Ghee artesanal de calidad, con amor, integridad y dedicación, para acompañar cada
+                            hogar.</p>
+                    </div>
+                    <div><strong>Visión</strong>
+                        <p>Ser una marca reconocida y apreciada por la calidad de nuestro Ghee y la confianza de
+                            nuestros clientes.</p>
+                    </div>
                 </div>
-                <div class="campo-1">
-                    <input class="campo" type="text" placeholder="Ciudad">                    
+            </div>
+        </div>
+        <div class="products-section" id="productos">
+            <div class="section-head"><span class="eyebrow">NUESTRAS PRESENTACIONES</span>
+                <h2>Elige tu <i>toque dorado</i></h2>
+                <p>El mismo cuidado artesanal en tres tamaños para tu cocina.</p>
+            </div>
+            <div class="products-grid">
+                <article class="product">
+                    <div class="product-image"><img alt="Frasco original de Ghee La Roca Dorada de 200 gramos"
+                            loading="lazy" src="img/frasco_200g_integrado.png" /></div>
+                    <div class="product-info"><span>IDEAL PARA PROBAR</span>
+                        <h3>Ghee artesanal · 200 g</h3>
+                        <div class="price">$14.000 <small>COP</small></div><a class="btn outline"
+                            href="https://wa.me/573203303682?text=Hola%2C%20quiero%20pedir%20Ghee%20La%20Roca%20Dorada%20de%20200%20g"
+                            rel="noopener" target="_blank">Pedir por WhatsApp ↗</a>
+                    </div>
+                </article>
+                <article class="product featured">
+                    <div class="ribbon">PRESENTACIÓN INTERMEDIA</div>
+                    <div class="product-image"><img alt="Frasco original de Ghee La Roca Dorada de 400 gramos"
+                            loading="lazy" src="img/frasco_400g_integrado.png" /></div>
+                    <div class="product-info"><span>PARA EL DÍA A DÍA</span>
+                        <h3>Ghee artesanal · 400 g</h3>
+                        <div class="price">$26.000 <small>COP</small></div><a class="btn outline"
+                            href="https://wa.me/573203303682?text=Hola%2C%20quiero%20pedir%20Ghee%20La%20Roca%20Dorada%20de%20400%20g"
+                            rel="noopener" target="_blank">Pedir por WhatsApp ↗</a>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-image"><img alt="Frasco original de Ghee La Roca Dorada de 800 gramos"
+                            loading="lazy" src="img/frasco_800g_integrado.png" /></div>
+                    <div class="product-info"><span>PARA COMPARTIR</span>
+                        <h3>Ghee artesanal · 800 g</h3>
+                        <div class="price">$50.000 <small>COP</small></div><a class="btn outline"
+                            href="https://wa.me/573203303682?text=Hola%2C%20quiero%20pedir%20Ghee%20La%20Roca%20Dorada%20de%20800%20g"
+                            rel="noopener" target="_blank">Pedir por WhatsApp ↗</a>
+                    </div>
+                </article>
+            </div>
+            <p class="small-note">Precios indicados en pesos colombianos. Confirma disponibilidad y condiciones de
+                entrega por WhatsApp.</p>
+        </div>
+        <div class="story-band" id="beneficios">
+            <div><span class="eyebrow light">CONOCE EL GHEE</span>
+                <h2>La belleza está<br /><i>en lo esencial.</i></h2>
+                <p>El Ghee es mantequilla clarificada que se cocina cuidadosamente para separar gran parte del agua y
+                    los sólidos lácteos. Su aroma característico y su versatilidad lo hacen especial para saltear,
+                    cocinar y dar sabor a tus preparaciones.</p><a class="btn gold" href="#productos">Llévalo a tu
+                    cocina ↗</a>
+            </div>
+            <div class="facts">
+                <div><b>01</b><strong>Sabor y aroma</strong>
+                    <p>Un toque agradable que complementa recetas dulces y saladas.</p>
                 </div>
-                <textarea class="campo" cols="30" rows="10" placeholder="texto"></textarea>
-                <input type="submit" value="Enviar" class="btn-1">
+                <div><b>02</b><strong>Versátil en la cocina</strong>
+                    <p>Úsalo para preparar huevos, vegetales, arroces y mucho más.</p>
+                </div>
+                <div><b>03</b><strong>Hecho con cuidado</strong>
+                    <p>Una preparación artesanal a la que dedicamos atención en cada paso.</p>
+                </div>
+            </div>
+        </div>
+        <div class="knowledge" id="conoce-ghee">
+            <div class="section-head"><span class="eyebrow">CONOCE NUESTRO INGREDIENTE</span>
+                <h2>Información para <i>tu cocina</i></h2>
+                <p>Ideas y datos para conocer mejor el Ghee artesanal.</p>
+            </div>
+            <div class="knowledge-grid">
+                <article class="knowledge-card"><span class="knowledge-number">01 / BENEFICIOS CULINARIOS</span>
+                    <h3>¿Por qué elegir Ghee?</h3>
+                    <ul>
+                        <li>Aporta un aroma característico y sabor suave a tus recetas.</li>
+                        <li>Se utiliza para cocinar y saltear gracias a su punto de humo relativamente alto.</li>
+                        <li>Su bajo contenido de agua facilita distintos usos en la cocina.</li>
+                        <li>Es una fuente concentrada de energía procedente de las grasas.</li>
+                    </ul>
+                </article>
+                <article class="knowledge-card"><span class="knowledge-number">02 / COMPOSICIÓN</span>
+                    <h3>Nutrientes y componentes</h3>
+                    <p>El Ghee está compuesto principalmente por grasas: saturadas, monoinsaturadas y pequeñas
+                        cantidades de poliinsaturadas. Puede contener vitaminas liposolubles como A y E, en cantidades
+                        variables.</p>
+                    <p class="fineprint">La composición exacta de La Roca Dorada debe establecerse mediante análisis o
+                        información nutricional verificada. No se presentan cifras inventadas por frasco.</p>
+                </article>
+                <article class="knowledge-card"><span class="knowledge-number">03 / IDEAS PARA DISFRUTAR</span>
+                    <h3>Modos de consumo</h3>
+                    <ul>
+                        <li>Untar una pequeña cantidad en arepas, tostadas o pan.</li>
+                        <li>Preparar huevos, vegetales salteados o arroz.</li>
+                        <li>Agregarlo a guisos, salsas y recetas caseras.</li>
+                        <li>Utilizarlo como alternativa a la mantequilla o algunos aceites según la receta.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        <div class="know-important" id="importante">
+            <div class="important-heading"><span class="eyebrow light">ES IMPORTANTE QUE SEPAS</span>
+                <h2>Disfrutar también es <i>informarse.</i></h2>
+            </div>
+            <div class="important-content">
+                <p>El Ghee contiene diferentes tipos de ácidos grasos, entre ellos saturados, monoinsaturados y pequeñas
+                    proporciones de poliinsaturados. Las cantidades dependen de la materia prima y del proceso de
+                    elaboración.</p>
+                <p>Es un alimento rico en grasas saturadas, por lo que conviene consumirlo con moderación dentro de una
+                    alimentación variada. Aunque la clarificación reduce considerablemente los sólidos lácteos, no
+                    garantiza la ausencia total de proteínas de leche o lactosa; quienes tienen alergia a la leche deben
+                    tener especial precaución.</p>
+                <p>El Ghee es un ingrediente culinario, no un tratamiento médico. No se deben atribuir beneficios
+                    específicos para el corazón, las hormonas o el sistema inmunológico sin evidencia apropiada.</p>
+            </div>
+        </div>
+        <div class="game-section" id="juego">
+            <div class="section-head"><span class="eyebrow">UN PEQUEÑO DESAFÍO</span>
+                <h2>Protege <i>el verdadero tesoro</i></h2>
+                <p>Hay nueve frascos: uno es La Roca Dorada. Derriba los otros ocho antes de que termine el tiempo.</p>
+            </div>
+            <div class="game-shell">
+                <div class="game-top"><span id="gameStatus">¿Puedes salvar el Ghee original?</span><span>⏱ <b
+                            id="timer">12</b> s · 🎯 <b id="hits">0</b>/8</span></div>
+                <div aria-label="Juego de frascos" class="game-stage" id="gameStage">
+                    <div class="shelf" id="shelf"></div>
+                    <div class="aim-line" id="aimLine"></div>
+                    <div class="crosshair" id="crosshair">⊕</div>
+                    <div class="stone" id="stone"></div>
+                    <div class="game-overlay" id="gameOverlay">
+                        <h3>¿Listo para jugar?</h3>
+                        <p>Apunta con la palanca y derriba los ocho frascos falsos.</p><button class="btn gold"
+                            id="startGame">Comenzar</button>
+                    </div>
+                </div>
+                <div class="game-controls">
+                    <div>
+                        <div aria-label="Palanca de dirección" class="joystick" id="joystick" role="application">
+                            <div class="stick" id="stick"></div>
+                        </div><small>Mueve la palanca para apuntar</small>
+                    </div><button aria-label="Lanzar piedra" class="fire-btn" id="fireBtn">LANZAR<br />●</button>
+                </div>
+                <p class="game-help">También puedes apuntar tocando los frascos. El juego es recreativo y no representa
+                    ningún producto competidor.</p>
+            </div>
+        </div>
+        <div class="reviews" id="opiniones">
+            <div class="review-copy"><span class="eyebrow">TU VOZ IMPORTA</span>
+                <h2>Queremos conocer<br /><i>tu experiencia.</i></h2>
+                <p>Tu opinión nos ayuda a seguir mejorando. Puedes compartirla aquí; la revisaremos antes de publicarla.
+                </p>
+                <div class="review-note">Las opiniones todavía no se envían a una base de datos: esta versión incluye el
+                    diseño del formulario, pendiente de conexión.</div>
+            </div>
+            <form class="review-form" id="reviewForm"><label for="reviewName">Tu nombre</label><input id="reviewName"
+                    maxlength="60" name="nombre" placeholder="¿Cómo te llamas?" required="" /><label for="reviewText">Tu
+                    opinión</label><textarea id="reviewText" maxlength="800" name="opinion"
+                    placeholder="Cuéntanos qué te pareció nuestro Ghee..." required="" rows="5"></textarea><button
+                    class="btn green" type="submit">Enviar opinión ↗</button>
+                <p aria-live="polite" id="reviewMessage" role="status"></p>
             </form>
-
-        </div>-->
-        <div class="footer-txt">
-            <section id="contacto"></section>
-            
-            <p class="pa">CONTACTO</p>
-            <hr class="last">
-                <p class="paa">Dirección: Cll 132 bis # 136 - 37 Suba</p>
-                <p class="pb">Teléfono: 320 3303682</p>
-                <p class="pc">WhatsApp: 320 3303682
-                    (Presiona en el ícono <i class="fa-brands fa-whatsapp"></i> y comunícate con La Roca Dorada)
-                </p>
-            </p>
         </div>
-    </Footer> 
-     
+        <div class="closing"><span class="eyebrow light">LA ROCA DORADA</span>
+            <h2>Un detalle dorado<br />para cada receta.</h2><a class="btn gold"
+                href="https://wa.me/573203303682?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20Ghee%20La%20Roca%20Dorada"
+                rel="noopener" target="_blank">Conversemos por WhatsApp ↗</a>
+        </div>
+    </main>
+    <footer>
+        <div><strong>LA ROCA DORADA</strong>
+            <p>Ghee artesanal · Colombia</p>
+        </div>
+        <div><a href="#inicio">Volver arriba ↑</a>
+            <p>© <span id="year"></span> La Roca Dorada</p>
+        </div>
+    </footer><a aria-label="Contactar por WhatsApp" class="floating-wa" href="https://wa.me/573203303682" rel="noopener"
+        target="_blank">✆</a>
+    <script src="script.js"></script>
 </body>
+
 </html>
